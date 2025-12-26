@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/bill_generator_screen.dart';
+import 'screens/menu_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bill Generator',
+      title: 'Flutter Assignments',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const BillGeneratorScreen(),
+        '/': (context) => const MenuScreen(),
       },
     );
   }
